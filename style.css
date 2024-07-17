@@ -52,3 +52,37 @@ nav ul li:first-child{
     border-radius: 20px;
     background-color: rgb(230, 83, 60);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive style start here */
+
+
+/* Mobile device design start here */
+/* header responsive start here */
+@media only screen and (max-width: 576px) {
+    nav{
+        display: none;
+    }
+}
+
+
+
+/* Tablet device design start here */
+/* header responsive start here */
+@media only screen and (min-width: 576px) and (max-width:992px) {
+    nav {
+        display: none;
+    }
+}
