@@ -13,6 +13,7 @@ body{
  /* Share style here */
 .container{
     width: 95%;
+    padding:50px 0;
     margin: 0 auto;
 }
 .btn-primary{
@@ -36,7 +37,6 @@ body{
 
 /* header css start here */
 header{
-    padding: 40px 0px;
     background: linear-gradient( rgb(17, 17, 17),rgba(17, 17, 17, 0.900),rgb(17, 17, 17));
 }
 .navbar{
@@ -78,9 +78,11 @@ nav ul li:first-child{
 
 /* Banner design start here */
 .banner{
+    padding-top:60px;
     display: flex;
     flex-direction: row;
-    justify-content:space-between
+    justify-content:space-between;
+    align-items: center;
 }
 .banner_content{
     width: 45%;
@@ -108,12 +110,36 @@ nav ul li:first-child{
 }
 .banner_img{
     width: 45%;
-    background-image: url('./images/banner.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
+.banner_img img{
+    object-fit: cover;
+}
+.workout_video{
+    width: 160px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    position: absolute;
+    top:20%;
+    right:10%;
+}
+.tutorial_content{
+    width: 160px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+}
 
 
 
@@ -130,16 +156,46 @@ nav ul li:first-child{
 /* Mobile device design start here */
 /* header responsive start here */
 @media only screen and (max-width: 576px) {
+.btn-primary {
+        padding: 16px 20px;
+        font-size: 14px;
+        border-radius: 30px;
+        font-weight: 500;
+        background-color: rgb(230, 83, 60);
+        color: white;
+        border: none;
+    }
+
+    .btn-secondary {
+        padding: 16px 20px;
+        font-size: 14px;
+        border-radius: 30px;
+        font-weight: 500;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+    }
     nav ul{
         display: none;
     }
     nav .icon {
         display: block;
     }
-.banner {
-    flex-direction: column ;
+    .banner {
+        flex-direction: column ;
+    }
+    .banner_content{
+        width: 100%;
+    }
+    .banner_img {
+        width: 100%;
+    }
+        .workout_video {
+            top: 31%;
+            right: 5%;
+        }
 }
-}
+
 
 
 
@@ -149,7 +205,27 @@ nav ul li:first-child{
     nav ul{
         display: none;
     }
-        nav .icon {
-            display: block;
-        }
+    nav .icon {
+        display: block;
+    }
+    .banner {
+        flex-direction: column ;
+    }
+    .banner_content{
+        width: 100%;
+    }
+    .banner_img {
+        width: 100%;
+    }
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner_content {
+        width: 100%;
+    }
+
+    .banner_img {
+        width: 100%;
+    }
 }
