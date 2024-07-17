@@ -16,7 +16,7 @@ body{
 
 /* header css start here */
 header{
-    height: 500px;
+    padding: 40px 0px;
     background: linear-gradient( rgb(17, 17, 17),rgba(17, 17, 17, 0.900),rgb(17, 17, 17));
 }
 .navbar{
@@ -38,6 +38,10 @@ nav ul {
     gap:40px;
     border:1px solid gray;
     border-radius: 20px;
+}
+nav .icon {
+    display: none;
+    font-size: 36px;
 }
 nav ul li {
     padding: 10px 30px;
@@ -72,9 +76,12 @@ nav ul li:first-child{
 /* Mobile device design start here */
 /* header responsive start here */
 @media only screen and (max-width: 576px) {
-    nav{
+    nav ul{
         display: none;
     }
+        nav .icon {
+            display: block;
+        }
 }
 
 
@@ -82,7 +89,10 @@ nav ul li:first-child{
 /* Tablet device design start here */
 /* header responsive start here */
 @media only screen and (min-width: 576px) and (max-width:992px) {
-    nav {
+    nav ul{
         display: none;
     }
+        nav .icon {
+            display: block;
+        }
 }
