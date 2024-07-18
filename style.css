@@ -348,7 +348,7 @@ select {
     height: 100%;
     border-radius: 8px;
     
-}
+}        
 .team_content{
     position: absolute;
     left:3%;
@@ -363,9 +363,11 @@ select {
 }
 
 
+/* Footer design start here */
+footer{
+    background: rgb(34, 34, 34);
+}
 /* responsive style start here */
-
-
 /* Mobile device design start here */
 /* header responsive start here */
 @media only screen and (max-width: 576px) {
