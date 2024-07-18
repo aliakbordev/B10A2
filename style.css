@@ -9,6 +9,7 @@ body{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     color: rgb(255, 255, 255);
+    background: rgb(17,17,17);
 }
  /* Share style here */
 .container{
@@ -71,7 +72,7 @@ body{
 
 /* header css start here */
 header{
-    background: linear-gradient( rgb(17, 17, 17),rgba(17, 17, 17, 0.900),rgb(17, 17, 17));
+    background: linear-gradient( rgb(17, 17, 17),rgba(162, 160, 160, 0.108),rgb(17, 17, 17));
 }
 .navbar{
     display: flex;
@@ -175,9 +176,6 @@ nav ul li:first-child{
     left: 0%;
 }
 /* Change Your Habit Section design start here */
-.habit_section{
-    background: rgb(17,17,17);
-}
 .habits{
     padding:60px 0px;
     display: flex;
@@ -234,7 +232,76 @@ nav ul li:first-child{
     border-radius: 18px;
 }
 
+/* BMI section design start here */
+.bmi_section{
+    margin-top:50px;
+    background: rgb(34,34,34);
+}
+.bmi{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 50px;
+}
+table,th,td {
+    border: 1px solid rgba(134, 130, 130, 0.507);
+    border-collapse: collapse;
 
+}
+table th {
+    text-align: start;
+    padding: 10px;
+}
+table td {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.bmi_chart{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.bmi_chart h3 {
+    font-size: 28px;
+}
+.bmi_form{
+    width: 60%;
+}
+.bmi_form h3{
+    font-size: 28px;
+}
+.inputs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding-top:20px;
+}
+.inputs input{
+    border:none;
+    padding:15px 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+}
+select {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.5);
+}
+.activity{
+    width: 100%;
+    margin:10px 0px 20px 0px;
+}
+.bmi_form button{
+    width:200px;
+    font-weight: 400;
+}
 
 
 
@@ -294,7 +361,6 @@ nav ul li:first-child{
         padding:20px;
         flex-direction: column;
     }
-
     .extra_run_content {
         width: 100%;
         gap: 20px;
@@ -305,6 +371,18 @@ nav ul li:first-child{
     .extra_run img {
         width: 100%;
     }
+    .bmi {
+        flex-direction: column;
+    }
+    .bmi_chart {
+        width: 100%;
+    }
+    .bmi_form {
+        width: 100%;
+    }
+
+
+
 }
 
 
@@ -351,4 +429,16 @@ nav ul li:first-child{
     .extra_run img {
         width: 50%;
     }
+    .bmi {
+        flex-direction: column;
+    }
+    .bmi_chart {
+        width: 100%;
+    }
+    .bmi_form {
+        width: 100%;
+    }
+
+
+
 }
