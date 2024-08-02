@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap');
 
 
 *{
@@ -125,8 +126,7 @@ nav ul li:first-child{
     font-weight: 900;
 }
 .banner_content h1 span{
-    font-family: 'Miama';
-    font-weight: 400;
+    font-family: "Dancing Script", cursive;
     font-size: 74px;
     font-style: italic;
 }
@@ -353,7 +353,7 @@ select {
     color: rgba(255, 255, 255, 0.5);
     font-size: 13px;
 }
-/* our pricing section here */
+/* unique or pricing section here */
 .price_title{
     color: rgb(230, 83, 60) !important;
 }
@@ -394,6 +394,44 @@ select {
     border-radius: 5px;
     padding: 10px;
     width: 70%;
+}
+.club_section{
+    background: rgb(34, 34, 34);
+}
+.club{
+    display: flex;
+    flex-direction: row-reverse;
+    gap:40px;
+}
+.club_content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+.club_txt{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.club_txt h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(230, 83, 60)
+}
+.club-btn{
+    color: rgb(230, 83, 60);
+    border-color: rgb(230, 83, 60);
+    border-radius: 4px;
+}
+.club_img {
+    width: 50%;
+}
+.club_img img{
+    width: 100%;
 }
 /* Trainings section start here */
 .exercises_row {
@@ -550,6 +588,21 @@ footer{
     .pricing_section {
         grid-template-columns: repeat(1, 1fr);
     }
+    .club {
+        flex-direction: column;
+        align-items: center;
+    }
+    .club_content {
+        width: 100%;
+    }
+    .club_img {
+        width: 100%;
+    }
+    .club-btn {
+        color: rgb(230, 83, 60);
+        border-color: rgb(230, 83, 60);
+        border-radius: 4px;
+    }
     .exercises_row {
         grid-template-columns: repeat(1, 1fr 1fr);
     }
@@ -629,6 +682,9 @@ footer{
     }
     .exercises_row {
         grid-template-columns: repeat(1, 1fr 1fr 1fr);
+    }
+    .club {
+        flex-direction: row;
     }
     .ftr_contents {
         flex-direction: column;
