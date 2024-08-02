@@ -361,8 +361,62 @@ select {
     color: rgba(255, 255, 255, 0.5);
     font-size: 13px;
 }
+/* our pricing section here */
+.price_title{
+    color: rgb(230, 83, 60) !important;
+}
+.pricing_section {
+    color: rgba(255, 255, 255, 0.5);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:30px;
+    text-align: center;
+    padding-top: 40px;
 
+}
+.prices{
+    background: rgb(34, 34, 34);
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+}
+.prices h5{
+    font-size: 20px;
+    color: white;
+}
+.price{
+    color: rgb(230, 83, 60);
+    font-size: 30px;
+    font-weight: 600;
+    padding: 5px;
+}
+.prices li{
+    list-style: square;
+}
+.btn{
+    background: rgb(230, 83, 60);
+    color:aliceblue;
+    border:none;
+    padding: 10px;
+    width: 80%;
+}
+/* Trainings section start here */
+.exercises_row {
+    display:grid;
+    grid-template-columns: repeat(1, 0.5fr 1fr 0.5fr);
+    padding-top: 40px;
+    
+}
+.exercise {
+    height: 280px;
+}
 
+.exercise img{
+    width: 100%;
+    height: 100%;
+}
 /* Footer design start here */
 footer{
     background: rgb(34, 34, 34);
@@ -476,6 +530,13 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+    .exercises_row {
+        grid-template-columns: repeat(1, 1fr 1fr);
+    
+    }
+    .plus{
+        display: none ;
+    }
     .ftr_contents {
         flex-direction: column;
         gap:20px
@@ -543,6 +604,10 @@ footer{
     }
     .bmi_form {
         width: 100%;
+    }
+    .exercises_row {
+        grid-template-columns: repeat(1, 1fr 1fr 1fr);
+    
     }
     .ftr_contents {
         flex-direction: column;
