@@ -325,23 +325,15 @@ select {
     background: rgb(34,34,34);
     border-radius: 8px;
     margin-top:40px;
-}
-.team1{
-    display:flex;
-    flex-direction: row;
-    gap:20px;
-}
-.team2{
-    display:flex;
-    flex-direction: row;
-    gap:20px;
-    margin-top:20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 .team{
     position: relative;
     overflow: hidden;
     border-radius:8px;
-    width: 35%;
+    width: 100%;
 }
 .team img{
     width: 100%;
@@ -372,7 +364,6 @@ select {
     gap:30px;
     text-align: center;
     padding-top: 40px;
-
 }
 .prices{
     background: rgb(34, 34, 34);
@@ -391,6 +382,7 @@ select {
     font-size: 30px;
     font-weight: 600;
     padding: 5px;
+    border-radius: 5px;
 }
 .prices li{
     list-style: square;
@@ -399,8 +391,9 @@ select {
     background: rgb(230, 83, 60);
     color:aliceblue;
     border:none;
+    border-radius: 5px;
     padding: 10px;
-    width: 80%;
+    width: 70%;
 }
 /* Trainings section start here */
 .exercises_row {
@@ -409,10 +402,39 @@ select {
     padding-top: 40px;
     
 }
+.i1{
+    background: linear-gradient(rgba(74, 139, 193, 0.5) 100%, rgba(75, 111, 189, 0.5)100%), url("./images/exercise1.jpg");
+    background-size: cover;
+}
+.i2 {
+    background: linear-gradient(rgba(190, 75, 75, 0.5) 100%, rgba(118, 72, 72, 0.5)100%), url("./images/exercise2.png");
+    background-size: cover;
+}
+.i3 {
+    background: linear-gradient(rgba(113, 190, 75, 0.5) 100%, rgba(111, 186, 64, 0.5)100%), url("./images/exercise3.png");
+    background-size: cover;
+}
+.i4 {
+    background: linear-gradient(rgba(106, 60, 186, 0.5) 100%, rgba(70, 68, 160, 0.5)100%), url("./images/exercise4.png");
+    background-size: cover;
+}
+.i5 {
+    background: linear-gradient(rgba(63, 58, 58, 0.5) 100%, rgba(90, 85, 85, 0.5)100%), url("./images/exercise5.jpg");
+    background-size: cover;
+}
+.i6 {
+    background: linear-gradient(rgba(201, 89, 197, 0.5) 100%, rgba(118, 72, 72, 0.5)100%), url("./images/exercise6.jpg");
+    background-size: cover;
+}
 .exercise {
     height: 280px;
+    position: relative;
+    overflow: hidden;
 }
-
+.exercise_content{
+    position: absolute;
+    left: 3%;
+    bottom: 3%;}
 .exercise img{
     width: 100%;
     height: 100%;
@@ -522,17 +544,14 @@ footer{
     .bmi_form {
         width: 100%;
     }
-    .team1 {
-        flex-direction: column;
-        align-items: center;
+    .teams{
+        grid-template-columns: repeat(1, 1fr);
     }
-    .team2 {
-        flex-direction: column;
-        align-items: center;
+    .pricing_section {
+        grid-template-columns: repeat(1, 1fr);
     }
     .exercises_row {
         grid-template-columns: repeat(1, 1fr 1fr);
-    
     }
     .plus{
         display: none ;
@@ -605,9 +624,11 @@ footer{
     .bmi_form {
         width: 100%;
     }
+    .pricing_section {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .exercises_row {
         grid-template-columns: repeat(1, 1fr 1fr 1fr);
-    
     }
     .ftr_contents {
         flex-direction: column;
