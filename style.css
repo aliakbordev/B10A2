@@ -628,6 +628,13 @@ footer{
 
 
 /* Tablet device design start here */
+
+@media only screen and (min-width: 995px) and (max-width:1360px) {
+    .workout_video {
+            top: 20%;
+            right: 0%;
+        }
+}
 /* header responsive start here */
 @media only screen and (min-width: 576px) and (max-width:992px) {
     nav ul{
@@ -649,9 +656,6 @@ footer{
         flex-direction: column;
     }
     .banner_content {
-        width: 100%;
-    }
-    .banner_img {
         width: 100%;
     }
     .habits {
